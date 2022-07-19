@@ -1,1 +1,1 @@
-alert("Hello, this course was a bear to get started but I'm making progress :-)")
+import '../styles/styles.css'
