@@ -2,7 +2,7 @@
   "name": "my-travel-site",
   "version": "1.0.0",
   "scripts": {
-    "dev": "webpack serve",
+    "dev": "webpack-dev-server",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
