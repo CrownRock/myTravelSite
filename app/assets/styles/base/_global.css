@@ -11,3 +11,12 @@ img {
 * {
     box-sizing: border-box;
 }
+
+a {
+    color: $mainOrange;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $mainBlue;
+}
