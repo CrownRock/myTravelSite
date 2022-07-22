@@ -11,13 +11,20 @@
         font-weight: 500; /* increases weight in the chosen words in title*/
     }
 
+    &--blue {
+        color: $mainBlue;
+    }
+
     &__icon {
         display: block;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: .6rem;
+        padding-right: .75rem;
 
         @mixin atSmall {
+            position: relative;
+            top: .75rem;
             margin-right: .5rem;
             margin-left: 0;
             margin-bottom: 0;
