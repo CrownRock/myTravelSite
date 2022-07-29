@@ -19,6 +19,8 @@
         transform: translateX(-50%);
         background-color: $mainBlue;
         padding: .75rem 2.25rem;
+        text-align:center;
+        line-height: 1.6;
         
         @mixin atMedium {
             left: auto;
@@ -28,7 +30,9 @@
     }
 
     &__logo__graphic {
-        text-indent: -9999px;
+        text-indent: 0; /* -9999px to move text out of graphic */
+        color: #fff;
+        font-size: 1.5rem;
     }
 
     &__menu-icon {
