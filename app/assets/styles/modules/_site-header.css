@@ -18,7 +18,7 @@
         left: 50%;
         transform: translateX(-50%);
         background-color: $mainBlue;
-        padding: .75rem 2.25rem;
+        padding: .5rem 1.75rem;
         text-align:center;
         line-height: 1.6;
         
