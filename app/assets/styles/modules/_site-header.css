@@ -26,6 +26,7 @@
 
     a:hover {
         color: $mainOrange;
+        box-shadow: 0 0 7px 2px $mainOrange;
     }
 
     &__logo {
