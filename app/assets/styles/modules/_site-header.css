@@ -10,35 +10,47 @@
     }
     
     @mixin atMedium { /* Show BKG on larger screens */
+        position: fixed;
         background: rgba($mainBlue, .3);
+
+        &--dark {
+            background-color: rgba(23, 51, 72, .85);
+        }
     }
 
     &__btn-container {
         @mixin atMedium {
             float: right; 
-        }
-        
+        }        
+    }
+
+    a:hover {
+        color: $mainOrange;
     }
 
     &__logo {
         position: absolute;
         top: 0;
         left: 50%;
-        transform: translateX(-50%);
+        transition: transform .3s ease-out;
+        transform: translateX(-50%) scale(.8);
+        transform-origin: 50% 0;
         background-color: $mainBlue;
         padding: .5rem 1.75rem;
-        text-align:center;
-        line-height: 1.6;
         
         @mixin atMedium {
             left: auto;
             transform: translateX(0);
             padding: 1.75rem 2.25rem;
+
+            .site-header--dark & {
+                transform: scale(.52);
+            }
         }
     }
 
     &__logo__graphic {
-        text-indent: 0; /* -9999px to move text out of graphic */
+        text-indent: -9999px; /* to move text out of graphic */
     }
 
     &__menu-icon {
